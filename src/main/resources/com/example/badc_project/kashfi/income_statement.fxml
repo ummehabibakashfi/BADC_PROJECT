@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.Income_StatementController">
+   <children>
+      <Label layoutX="37.0" layoutY="71.0" text="Total Income" />
+      <Label layoutX="37.0" layoutY="119.0" text="Total Expense" />
+      <Label layoutX="42.0" layoutY="153.0" text="Withdrawal" />
+      <Label layoutX="332.0" layoutY="119.0" text="Total Net Profit" />
+      <TextField fx:id="incomeTextField" layoutX="123.0" layoutY="67.0" />
+      <TextField fx:id="expenseTextField" layoutX="123.0" layoutY="115.0" />
+      <TextField fx:id="wthdrawalTextField" layoutX="123.0" layoutY="157.0" />
+      <Button layoutX="255.0" layoutY="187.0" mnemonicParsing="false" onAction="#netProfitOnMouseClick" text="Calculate Net Profit" />
+      <Label layoutX="426.0" layoutY="113.0" prefHeight="30.0" prefWidth="149.0" />
+      <Label layoutX="234.0" layoutY="27.0" text="Income Statement" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="incomeStatementTableView" layoutX="67.0" layoutY="227.0" prefHeight="200.0" prefWidth="465.0">
+        <columns>
+          <TableColumn fx:id="incomeTColumn" prefWidth="111.33334350585938" text="Total Income" />
+          <TableColumn fx:id="expenseTColumn" prefWidth="114.66668701171875" text="Total Expense" />
+            <TableColumn fx:id="withdrawalTColumn" prefWidth="103.33331298828125" text="Withdrawal" />
+            <TableColumn fx:id="netProfitTColumn" prefWidth="136.66668701171875" text="Total Net Profit" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

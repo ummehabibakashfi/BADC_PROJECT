@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="527.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_2231447.ResistrationIssuController">
+   <children>
+      <Label layoutX="34.0" layoutY="121.0" text="NID/Phone" />
+      <TextField fx:id="phoneTextfField" layoutX="107.0" layoutY="117.0" />
+      <Button layoutX="117.0" layoutY="174.0" mnemonicParsing="false" onAction="#searchOnAction" text="Search" />
+      <Label fx:id="error" layoutX="216.0" layoutY="447.0" prefHeight="17.0" prefWidth="134.0" text="        Error" />
+      <TableView fx:id="tableview" layoutX="292.0" layoutY="125.0" prefHeight="294.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="errorid" prefWidth="75.0" text="Error Id" />
+          <TableColumn fx:id="errorType" prefWidth="75.0" text="Error Type" />
+            <TableColumn fx:id="farmerName" prefWidth="91.33331298828125" text="Farmer Name " />
+            <TableColumn fx:id="details" prefWidth="59.333282470703125" text="Details" />
+        </columns>
+      </TableView>
+      <Label layoutX="19.0" layoutY="229.0" text="Farmer Name" />
+      <Label layoutX="34.0" layoutY="255.0" text="NID" />
+      <Label layoutX="27.0" layoutY="295.0" text="Phone" />
+      <Label layoutX="26.0" layoutY="327.0" text="Adress" />
+      <TextField fx:id="nameTextField" layoutX="94.0" layoutY="225.0" />
+      <TextField fx:id="nidTextField" layoutX="94.0" layoutY="259.0" />
+      <TextField fx:id="phoneTextField" layoutX="75.0" layoutY="291.0" />
+      <TextField fx:id="adressTextField" layoutX="75.0" layoutY="323.0" />
+      <Button layoutX="130.0" layoutY="386.0" mnemonicParsing="false" onAction="#updateDetailsOnAction" text="Update Details" />
+      <Label layoutX="117.0" layoutY="34.0" prefHeight="31.0" prefWidth="397.0" text="                  Registration Issues">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

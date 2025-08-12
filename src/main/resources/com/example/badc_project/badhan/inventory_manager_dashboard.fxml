@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.badhan.InventoryManagerDashboardController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="613.0" prefWidth="865.0">
+         <children>
+            <Label fx:id="inventoryManagerLabel" layoutX="284.0" layoutY="57.0" prefHeight="27.0" prefWidth="282.0" text="Wellcome Inventory Manager">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="inventoryLevelButton" layoutX="46.0" layoutY="127.0" mnemonicParsing="false" onAction="#inventoryLevelOnAction" text="Inventory level" />
+            <Button fx:id="newSuppliesButton" layoutX="220.0" layoutY="127.0" mnemonicParsing="false" onAction="#newSuppliesOnAction" text="Order new supplies" />
+            <Button fx:id="manageDistributionButton" layoutX="390.0" layoutY="127.0" mnemonicParsing="false" onAction="#manageDistributionOnAction" text="Manage Distribution" />
+            <Button layoutX="576.0" layoutY="127.0" mnemonicParsing="false" onAction="#updateInventoryRecordsOnAction" text="Update inventory records" />
+            <Button fx:id="inventoryReportsButton" layoutX="12.0" layoutY="263.0" mnemonicParsing="false" onAction="#generateInventoryReportsOnAction" text="Generate inventory Reports" />
+            <Button fx:id="equipmentAvailabilitybutton" layoutX="378.0" layoutY="263.0" mnemonicParsing="false" onAction="#equipmentAvailabilityOnAction" text="Notify Field Offices About Equipment Availability" />
+            <Button fx:id="equipmentReturnButton" layoutX="667.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleEquipmentReturnOnAction" text="Handle Equipment Return " />
+            <Button fx:id="InventoryAuditsButton" layoutX="207.0" layoutY="263.0" mnemonicParsing="false" onAction="#conductInventoryAuditsOnAction" text="Conduct Inventory Audits" />
+            <Button fx:id="previousButton" layoutX="59.0" layoutY="452.0" mnemonicParsing="false" onAction="#previoun" onDragDetected="#previousButtonOnAction" text="Previous" />
+            <Button fx:id="logoutButton" layoutX="734.0" layoutY="452.0" mnemonicParsing="false" onDragDetected="#logoutButtonOnAction" text="Logout" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

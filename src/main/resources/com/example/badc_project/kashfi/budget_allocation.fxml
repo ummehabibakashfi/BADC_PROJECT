@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.BudgetAllocationController">
+   <children>
+      <Label layoutX="230.0" layoutY="23.0" text="Budget Allocation" underline="true" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="75.0" text="Department" />
+      <Label layoutX="44.0" layoutY="119.0" text="Budget Type" />
+      <Label layoutX="334.0" layoutY="75.0" text="Amount" />
+      <Label layoutX="334.0" layoutY="119.0" text="Date" />
+      <ComboBox fx:id="deptComboBox" layoutX="140.0" layoutY="71.0" prefWidth="150.0" />
+      <ComboBox fx:id="budgetTypeComboBox" layoutX="140.0" layoutY="115.0" prefWidth="150.0" />
+      <TextField fx:id="amountTextField" layoutX="380.0" layoutY="73.0" />
+      <DatePicker fx:id="datePicker" layoutX="377.0" layoutY="115.0" />
+      <Button layoutX="273.0" layoutY="167.0" mnemonicParsing="false" onAction="#submitButtonOnMouseClick" text="Submit" />
+      <TableView fx:id="budgetAllocationTableView" layoutX="47.0" layoutY="208.0" prefHeight="157.0" prefWidth="455.0">
+        <columns>
+          <TableColumn fx:id="deptTColumn" prefWidth="137.99999618530273" text="Department" />
+          <TableColumn fx:id="typeTColumn" prefWidth="142.6667022705078" text="Budget Type" />
+            <TableColumn fx:id="amountTColumn" prefWidth="95.33331298828125" text="Amount" />
+            <TableColumn fx:id="dateTColumn" prefWidth="79.33331298828125" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

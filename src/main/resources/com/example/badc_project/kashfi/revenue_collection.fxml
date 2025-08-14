@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="492.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.RevenueCollectionController">
+   <children>
+      <Label layoutX="207.0" layoutY="27.0" text="Revenue Collection" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="92.0" text="Department" />
+      <Label layoutX="77.0" layoutY="130.0" text="Month of Collection" />
+      <Label layoutX="77.0" layoutY="200.0" text="Revenue Amount" />
+      <Label layoutX="77.0" layoutY="168.0" text="Year of Collection" />
+      <ComboBox fx:id="deptComboBox" layoutX="207.0" layoutY="88.0" prefWidth="150.0" />
+      <ComboBox fx:id="monthComboBox" layoutX="207.0" layoutY="126.0" prefWidth="150.0" />
+      <TextField fx:id="yearTextField" layoutX="208.0" layoutY="164.0" />
+      <TextField fx:id="amountTextField" layoutX="208.0" layoutY="196.0" />
+      <Button layoutX="218.0" layoutY="239.0" mnemonicParsing="false" onAction="#submitButtonOnMouseClick" text="Submit" />
+      <TableView fx:id="revenueTableView" layoutX="69.0" layoutY="278.0" prefHeight="200.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="deptTColumn" prefWidth="119.33334350585938" text="Department" />
+          <TableColumn fx:id="monthTColumn" prefWidth="102.6666259765625" text="Month" />
+            <TableColumn fx:id="yearTColumn" prefWidth="125.33331298828125" text="Year" />
+            <TableColumn fx:id="amountTColumn" prefWidth="127.3333740234375" text="Revenue Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

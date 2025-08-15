@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="431.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.TrackOutstandingDuescontroller">
+   <children>
+      <Label fx:id="trackoutstandingduesLabel" layoutX="168.0" layoutY="38.0" text="track outstanding dues" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TableView" layoutY="118.0" prefHeight="200.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="partyTabelColumn" prefWidth="183.20001220703125" text="party" />
+            <TableColumn fx:id="amountTableColumn" prefWidth="191.20001220703125" text="amount" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="221.5999755859375" text="status" />
+        </columns>
+      </TableView>
+      <Button layoutX="248.0" layoutY="346.0" mnemonicParsing="false" onAction="#sendreminderOnAction" text="send reminder" />
+   </children>
+</AnchorPane>

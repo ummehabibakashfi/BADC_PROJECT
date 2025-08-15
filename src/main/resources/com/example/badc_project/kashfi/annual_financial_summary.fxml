@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="502.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.AnnualFinancialSummarycontroller">
+   <children>
+      <Label layoutX="200.0" layoutY="28.0" />
+      <Label fx:id="AnnualFinancialSummaryLabel" layoutX="193.0" layoutY="28.0" text="Annual Financial Summary">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="YearLabel" layoutX="94.0" layoutY="93.0" prefHeight="22.0" prefWidth="43.0" text="Year:" />
+      <ComboBox fx:id="ComboBox" layoutX="160.0" layoutY="88.0" prefWidth="150.0" promptText="2023" />
+      <Button layoutX="350.0" layoutY="88.0" mnemonicParsing="false" onAction="#GeneratereportOnAction" text="Generate report" />
+      <Label fx:id="KeyFinancialMetricsLabel" layoutX="28.0" layoutY="215.0" text="Key Financial Metrics">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="incomeLabel" layoutX="39.0" layoutY="264.0" text="income:" />
+      <Label fx:id="expensesLabel" layoutX="39.0" layoutY="310.0" prefHeight="22.0" prefWidth="73.0" text="expenses:" />
+      <Label fx:id="subsidiesLabel" layoutX="39.0" layoutY="351.0" text="subsidies:" />
+      <Label fx:id="netbalanceLabel" layoutX="39.0" layoutY="388.0" text="net balance:" />
+      <PieChart layoutX="596.0" layoutY="215.0" prefHeight="174.0" prefWidth="172.0" />
+      <PieChart fx:id="PieChart" layoutX="542.0" layoutY="225.0" prefHeight="160.0" prefWidth="213.0" />
+      <Button layoutX="565.0" layoutY="410.0" mnemonicParsing="false" onAction="#downloadOnAction" text="download" />
+      <Button layoutX="677.0" layoutY="410.0" mnemonicParsing="false" onAction="#printOnAction" text="print" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="671.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.HarvestFeedbackcontroller">
+   <children>
+      <Label fx:id="FarmerDashboardLabel" layoutX="14.0" layoutY="31.0" text="Farmer Dashboard">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="GotoDashboardLabel" layoutX="21.0" layoutY="81.0" text="Go to Dashboard" />
+      <Label fx:id="SubmitHarvestReportLabel" layoutX="21.0" layoutY="119.0" text="Submit Harvest Report" />
+      <Label fx:id="CropFeedbackLabel" layoutX="21.0" layoutY="155.0" text="Crop Feedback" />
+      <Line endX="-100.39999389648438" endY="612.0" layoutX="314.0" layoutY="59.0" startX="-93.99996948242188" startY="-50.999996185302734" />
+      <Label fx:id="AccountLabel" layoutX="262.0" layoutY="20.0" text="Account">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="61.0" text="Submit Crop Yield &amp; Harvest Feedback">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="CropNameLabel" layoutX="238.0" layoutY="119.0" text="Crop Name:" />
+      <TextField fx:id="BororiceTextField" layoutX="239.0" layoutY="150.0" text="Boro rice" />
+      <Label fx:id="HarvestQuantity" layoutX="238.0" layoutY="202.0" text="Harvest Quantity:" />
+      <TextField fx:id="kgTextField" layoutX="245.0" layoutY="232.0" text="kg" />
+      <Label fx:id="HarvestDateLabel" layoutX="245.0" layoutY="277.0" text="Harvest Date:" />
+      <DatePicker fx:id="DatePicker" layoutX="262.0" layoutY="299.0" />
+      <Label fx:id="OverallYieldRatingLabel" layoutX="239.0" layoutY="338.0" text="Overall Yield Rating:" />
+      <ComboBox fx:id="ComboBox" layoutX="288.0" layoutY="369.0" prefWidth="150.0" />
+      <Label fx:id="ChallengesFacedLabel" layoutX="245.0" layoutY="422.0" text="Challenges Faced:" />
+      <TextArea fx:id="FertilizerTextArea" layoutX="573.0" layoutY="422.0" prefHeight="221.0" prefWidth="276.0" />
+      <TextField fx:id="TextField" layoutX="329.0" layoutY="462.0" />
+      <Label fx:id="FertilizerEffectivenessLabel" layoutX="573.0" layoutY="390.0" text="Fertilizer Effectiveness:" />
+      <CheckBox fx:id="SendEmailCheckBox" layoutX="573.0" layoutY="433.0" mnemonicParsing="false" text="Send Email" />
+      <CheckBox fx:id="EmailCheckBox" layoutX="785.0" layoutY="433.0" mnemonicParsing="false" text="Email" />
+      <TextField fx:id="EmailTextField" layoutX="583.0" layoutY="478.0" prefHeight="30.0" prefWidth="86.0" text="Email" />
+      <TextField fx:id="PhoneTextField" layoutX="751.0" layoutY="478.0" prefHeight="32.0" prefWidth="95.0" text="Phone" />
+      <Label fx:id="pleasefillintherequiredfieldsLabel" layoutX="583.0" layoutY="569.0" prefHeight="22.0" prefWidth="225.0" text="please fill in the required fields" />
+      <TextArea fx:id="TextArea" layoutX="596.0" layoutY="102.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="ThankyouLabel" layoutX="646.0" layoutY="119.0" text="Thank you">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="YourfeedbackhelpsusLabel" layoutX="622.0" layoutY="177.0" text="Your feedback helps us" />
+      <Label fx:id="improvesupportforLabel" layoutX="621.0" layoutY="202.0" text="improve support for " />
+      <Label fx:id="futureseasonsLabel" layoutX="624.0" layoutY="232.0" text="future seasons" />
+   </children>
+</AnchorPane>

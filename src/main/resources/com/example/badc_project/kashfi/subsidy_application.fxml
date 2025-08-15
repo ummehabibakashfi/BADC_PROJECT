@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane opacity="0.83" prefHeight="478.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.kashfi.SubsidyapplicationController">
+   <children>
+      <Label fx:id="selecttypeLabel" layoutX="16.0" layoutY="112.0" text="select type:" />
+      <Label fx:id="selectitemLabel" layoutX="16.0" layoutY="174.0" text="select item:" />
+      <Label fx:id="quantityLabel" layoutX="24.0" layoutY="228.0" text="quantity:" />
+      <ComboBox layoutX="137.0" layoutY="107.0" prefWidth="150.0" promptText="seed" />
+      <TextField fx:id="wheatTextfield" layoutX="130.0" layoutY="169.0" text="wheat" />
+      <TextField fx:id="TextField" layoutX="137.0" layoutY="223.0" prefHeight="32.0" prefWidth="218.0" />
+      <Label fx:id="subsidyapplicationLabel" graphicTextGap="7.0" layoutX="178.0" layoutY="26.0" text="Subsidy Application" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="151.0" layoutY="298.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="apply" />
+      <Label layoutX="309.0" layoutY="303.0" prefHeight="22.0" prefWidth="198.0" text="status message here" />
+   </children>
+</AnchorPane>

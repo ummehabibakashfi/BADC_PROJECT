@@ -39,7 +39,7 @@ public class HarvestFeedbackcontroller
     @javafx.fxml.FXML
     private Label AccountLabel;
     @javafx.fxml.FXML
-    private ComboBox ComboBox;
+    private ComboBox<String> ComboBox;
     @javafx.fxml.FXML
     private Label HarvestDateLabel;
     @javafx.fxml.FXML

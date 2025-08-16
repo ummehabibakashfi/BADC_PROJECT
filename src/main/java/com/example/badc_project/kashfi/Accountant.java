@@ -52,8 +52,5 @@ public class Accountant implements Serializable {
     }
 
 }
-package com.example.badc_project.kashfi.;
 
-import java.io.*;
-        import java.util.ArrayList;
 

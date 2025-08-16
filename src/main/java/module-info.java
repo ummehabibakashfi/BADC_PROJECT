@@ -1,6 +1,7 @@
 module com.example.badc_project {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.example.badc_project to javafx.fxml;

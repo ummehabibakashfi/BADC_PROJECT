@@ -1,37 +1,44 @@
 package com.example.badc_project.kashfi;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class RevenueCollectionController
-{
-    @javafx.fxml.FXML
-    private TableColumn amountTColumn;
-    @javafx.fxml.FXML
-    private TableColumn deptTColumn;
-    @javafx.fxml.FXML
-    private TableView revenueTableView;
-    @javafx.fxml.FXML
-    private TextField yearTextField;
-    @javafx.fxml.FXML
+public class RevenueCollectionController {
+
+    @FXML
+    private TableColumn<?, ?> amountTColumn;
+
+    @FXML
     private TextField amountTextField;
-    @javafx.fxml.FXML
-    private TableColumn yearTColumn;
-    @javafx.fxml.FXML
-    private ComboBox monthComboBox;
-    @javafx.fxml.FXML
-    private ComboBox deptComboBox;
-    @javafx.fxml.FXML
-    private TableColumn monthTColumn;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private ComboBox<?> deptComboBox;
+
+    @FXML
+    private TableColumn<?, ?> deptTColumn;
+
+    @FXML
+    private ComboBox<?> monthComboBox;
+
+    @FXML
+    private TableColumn<?, ?> monthTColumn;
+
+    @FXML
+    private TableView<?> revenueTableView;
+
+    @FXML
+    private TableColumn<?, ?> yearTColumn;
+
+    @FXML
+    private TextField yearTextField;
+
+    @FXML
+    void submitButtonOnMouseClick(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void submitButtonOnMouseClick(ActionEvent actionEvent) {
-    }
 }

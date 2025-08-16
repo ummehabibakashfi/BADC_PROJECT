@@ -9,7 +9,7 @@ public class UploadAuditRecordscontroller
     @javafx.fxml.FXML
     private Label submitLabel;
     @javafx.fxml.FXML
-    private ComboBox selectyearComboBox;
+    private ComboBox<String> selectyearComboBox;
     @javafx.fxml.FXML
     private Label yearLabel;
     @javafx.fxml.FXML
@@ -19,7 +19,7 @@ public class UploadAuditRecordscontroller
     @javafx.fxml.FXML
     private Label departmentLabel;
     @javafx.fxml.FXML
-    private ComboBox selectdepartmentComboBox;
+    private ComboBox<String> selectdepartmentComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {

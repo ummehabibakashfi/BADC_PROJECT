@@ -16,7 +16,7 @@ public class AnnualFinancialSummarycontroller
     @javafx.fxml.FXML
     private Label YearLabel;
     @javafx.fxml.FXML
-    private ComboBox ComboBox;
+    private ComboBox<String> ComboBox;
     @javafx.fxml.FXML
     private Label AnnualFinancialSummaryLabel;
     @javafx.fxml.FXML

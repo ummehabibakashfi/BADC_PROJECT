@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.badhan.AdvertisementDashboardController">
+   <children>
+      <Label layoutX="235.0" layoutY="29.0" text="Advertisement Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="74.0" text="Ad ID:" />
+      <Label layoutX="52.0" layoutY="115.0" text="Description:" />
+      <Label layoutX="52.0" layoutY="156.0" text="Title:" />
+      <Label layoutX="36.0" layoutY="200.0" text="Target Audience" />
+      <Label layoutX="52.0" layoutY="237.0" text="Budget:" />
+      <TextField fx:id="addIDTextField" layoutX="124.0" layoutY="70.0" />
+      <TextField fx:id="TitleTextField" layoutX="125.0" layoutY="152.0" />
+      <TextField fx:id="audienceTextField" layoutX="126.0" layoutY="196.0" />
+      <TextField layoutX="126.0" layoutY="233.0" />
+      <Button layoutX="235.0" layoutY="280.0" mnemonicParsing="false" onAction="#adButtonOnAction" text="Create Ad" />
+      <Button layoutX="54.0" layoutY="332.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
+      <Button layoutX="405.0" layoutY="345.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" text="Log Out" />
+      <TextField fx:id="descriptionTextField1" layoutX="133.0" layoutY="111.0" />
+   </children>
+</AnchorPane>

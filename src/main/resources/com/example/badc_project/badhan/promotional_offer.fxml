@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.badhan.PromotionalOfferController">
+   <children>
+      <Label layoutX="229.0" layoutY="35.0" text="Promotional Offer Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="91.0" />
+      <Label layoutX="96.0" layoutY="142.0" text="Discount:" />
+      <TextField fx:id="idTextField" layoutX="169.0" layoutY="87.0" />
+      <TextField fx:id="discountTextField" layoutX="169.0" layoutY="138.0" />
+      <TextField fx:id="validityTextField" layoutX="170.0" layoutY="187.0" />
+      <Label layoutX="96.0" layoutY="192.0" text="Validity:" />
+      <Label layoutX="96.0" layoutY="91.0" text="ID:" />
+      <Button layoutX="121.0" layoutY="251.0" mnemonicParsing="false" onAction="#launchButtonOnAction" text="Launch Offer" />
+      <Button layoutX="319.0" layoutY="251.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" text="Verify" />
+      <Button layoutX="51.0" layoutY="340.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
+      <Button layoutX="423.0" layoutY="334.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" text="Log Out" />
+   </children>
+</AnchorPane>

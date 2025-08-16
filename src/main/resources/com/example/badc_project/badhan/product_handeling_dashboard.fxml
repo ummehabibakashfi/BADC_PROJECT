@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.badc_project.badhan.ProductHandelingDashboardController">
+   <children>
+      <Label layoutX="205.0" layoutY="28.0" text="Product Handeling Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="73.0" text="Return ID:" />
+      <Label layoutX="37.0" layoutY="123.0" text="Office ID:" />
+      <Label layoutX="37.0" layoutY="171.0" text="Equipment Details:" />
+      <TextField fx:id="returnIDTextField" layoutX="143.0" layoutY="69.0" />
+      <TextField fx:id="officeIDTextField" layoutX="143.0" layoutY="119.0" />
+      <TextField fx:id="detailsTextField" layoutX="143.0" layoutY="167.0" />
+      <Button layoutX="143.0" layoutY="233.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" text="Verify Return" />
+      <Button layoutX="325.0" layoutY="233.0" mnemonicParsing="false" onAction="#processButtonOnAction" text="Process Return" />
+      <Button layoutX="51.0" layoutY="324.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
+      <Button layoutX="445.0" layoutY="337.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" text="Log Out" />
+   </children>
+</AnchorPane>
